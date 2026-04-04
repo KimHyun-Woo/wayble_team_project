@@ -1,0 +1,15 @@
+services:
+  db:
+    image: mysql:8.0
+    container_name: my-mysql-db
+    restart: always
+    environment:
+      MYSQL_DATABASE: my_database
+      MYSQL_ROOT_PASSWORD: 2026 
+    ports:
+      - "3306:3306"
+    volumes:
+      # 테이블 생성 스크립트 연결
+      - ./init.sql:/docker-entrypoint-initdb.d/init.sql
+      # 컨테이너를 삭제해도 데이터가 유지되도록 설정
+      - ./mysql_data:/var/lib/mysql
