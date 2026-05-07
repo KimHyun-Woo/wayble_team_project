@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #f2f4f7;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+/* 전체 앱 */
+.app {
+  max-width: 480px;
+  margin: 0 auto;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: #f2f4f7;
+}
+
+/* 상단 */
+.header {
+  padding: 16px;
+  font-size: 22px;
+}
+
+.back-btn {
+  background: none;
+  border: none;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+/* 메인 */
+.main {
+  flex: 1;
+  padding: 16px;
+}
+
+/* 입력 박스 */
+.input-box {
+  background: #fff;
+  padding: 16px;
+  border-radius: 14px;
+  margin-bottom: 16px;
+}
+
+.input-box label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.input-box input {
+  width: 100%;
+  padding: 14px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  font-size: 14px;
+}
+
+/* 버튼 */
+.next-btn {
+  width: 100%;
+  padding: 16px;
+  background: #4a6fb3;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+/* 하단 네비 */
+.bottom-nav {
+  display: flex;
+  border-top: 1px solid #ddd;
+  background: white;
+}
+
+.nav-item {
+  flex: 1;
+  text-align: center;
+  padding: 10px 0;
+  font-size: 12px;
+  color: #888;
+}
+
+.nav-item span {
+  display: block;
+  margin-top: 8px;
+}
+
+.nav-item.active {
+  color: #4a6fb3;
+}

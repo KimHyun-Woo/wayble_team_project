@@ -1,0 +1,44 @@
+<!-- 3.2.locationUpload -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>등록페이지</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class = "app">
+<header class="header">
+    <button class="back-btn" onclick="goBack()">←</button>
+</header>
+<main class = "main">
+    <div>(사진)</div>
+
+    <div class="input-box">
+        <lable>소개글</lable>
+        <input type="text" placeholder="예: 중앙대학교 310관">
+    </div>
+
+    <div class="input-box">
+        <lable>태그</lable>
+        <input type="text" placeholder="예: #중앙대, #커피, #맛집">
+    </div>
+</main>
+
+<!-- 하단 네비 -->
+  <nav class="bottom-nav">
+    <div class="nav-item">🏠<span>홈</span></div>
+    <div class="nav-item">🚩<span>경로 등록</span></div>
+    <div class="nav-item active">📍<span>장소 등록</span></div>
+    <div class="nav-item">👤<span>계정</span></div>
+  </nav>
+  
+</div>
+
+</body>
+
+
+</html>
